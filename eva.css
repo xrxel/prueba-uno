@@ -1,1 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+
+:root{
+    --clr-main: #25ad21;
+    --clr-white: rgba(255, 255, 255, 0.993);
+    --clr-gray: gray;
+    --clr-red:red;
+    --clr-black:black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Source Serif Pro', serif; ;
+}
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+background-color: var(--clr-main);
+
+}
+
+aside{
+    padding: 2rem;
+    color: var(--clr-white);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.logo{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--clr-white);
+}
+.Texto-footer{
+    color: var(--clr-black);
+    font-size: .80rem;
+}
+main{
+    background-color: var(--clr-white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.Titulo-central{
+    color: var(--clr-black);
+}
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(7 1fr) ;
+}
