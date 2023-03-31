@@ -2,6 +2,7 @@
 
 :root{
     --clr-main: #25ad21;
+    --clr-main-claro: rgb(4, 105, 4);
     --clr-white: rgba(255, 255, 255, 0.993);
     --clr-gray: gray;
     --clr-red:red;
@@ -50,24 +51,56 @@ aside{
     font-size: 1.3rem;
     color: var(--clr-white);
 }
+
 .Texto-footer{
     color: var(--clr-black);
     font-size: .80rem;
 }
-main{
+
+main {
     background-color: var(--clr-white);
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 3rem;
 }
-.Titulo-central{
-    color: var(--clr-black);
+.titulo-principal {
+    color: var(--clr-main);
+    margin-bottom: 2rem;
 }
-.contenido-productos{
+.contenedor-productos {
     display: grid;
-    grid-template-columns: repeat(4 2fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
-.producto-img{
-    max-width: 100%;
+.producto-imagen {
+    max-width: 100%; 
+    border-radius: 1rem;
+}
+.producto-detalle{
+    background-color:var(--clr-main );
+    padding: .5rem;
+    border-radius: .75rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.pruduc-titulo{
+    font-size: 1rem;
+}
+.agrgar-producto{
+    border: 0;
+    background-color: var(--clr-white);
+    color:var(--clr-black);
+    padding: .25rem;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-white);
+}
+.agrgar-producto:hover{
+    background-color: var(--clr-main-claro);
+    color:floralwhite;
 }
