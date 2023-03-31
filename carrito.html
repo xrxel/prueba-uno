@@ -17,12 +17,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a class="btn-volver" href="Prueba1.html">
+                        <a class="boton-menu btn-volver" href="Prueba1.html">
                             <i class="bi bi-arrow-90deg-left"></i>Seguir Comprando
                         </a>
                     </li>
                     <li>
-                        <a class="btn-carrito active" href="carrito.html"><i class="bi bi-cart-fill"></i>Carrito <span class="num">0</span>
+                        <a class=" boton-menu btn-carrito" href="carrito.html">
+                            <i class="bi bi-cart-fill"></i>Carrito <span class="num">0</span>
                         </a>
                     </li>
                 </ul>
@@ -36,12 +37,12 @@
             <div class="contenedor-Carrito">
                 <p class="carrito-vacio">Tu Carrito Esta vacío  <i class="bi bi-emoji-frown"></i>.</p>
                 
-                <div class="carrito-productos">
+                <div class="carrito-productos disabled">
                     
                     <div class="carrito-producto">
-                        <img src="images/tierra 1.jpg" alt="">
+                        <img class="imagen-carrito" src="images/tierra 1.jpg" alt="">
                         <div class="Carrito-producto-nombre">
-                            <small>Titulo</small>
+                            <small>Material</small>
                             <h3>Tierra de hojas</h3>                            
                         </div>
                         <div class="Carrito-producto-cantidad">
@@ -51,18 +52,19 @@
                         <div class="Carrito-producto-precio">
                             <small>precio</small>
                             <p>$1000</p>
-                            <div class="Carrito-producto-subtotal">
-                                <small>Subtotal</small>
-                                <p>$1000</p>     
-                                <button class="carrito-producto-borrar"><i class="bi bi-trash3-fill"></i></button>            
-                            </div>                          
                         </div>
+                        <div class="Carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$1000</p>     
+                            <button class="carrito-producto-borrar"><i class="bi bi-trash3-fill"></i></button>            
+                        </div>                          
                     </div>
+                
                     <div class="carrito-producto">
-                        <img src="images/tierra 1.jpg" alt="">
-                        <div class="Carrito-producto-nombre">
-                            <small>Titulo</small>
-                            <h3>Tierra de hojas 02</h3>                            
+                        <img class="imagen-carrito" src="images/tierra 1.jpg" alt="">
+                        <div  class="Carrito-producto-nombre">
+                            <small>Material</small>
+                            <h3>Tierra de hojas</h3>                            
                         </div>
                         <div class="Carrito-producto-cantidad">
                             <small>Cantidad</small>
@@ -71,20 +73,21 @@
                         <div class="Carrito-producto-precio">
                             <small>precio</small>
                             <p>$2000</p>
-                            <div class="Carrito-producto-subtotal">
-                                <small>Subtotal</small>
-                                <p>$2000</p>     
-                                <button class="carrito-producto-borrar"><i class="bi bi-trash3-fill"></i></button>            
-                            </div>                          
                         </div>
-
-
+                        <div class="Carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$2000</p>     
+                            <button class="carrito-producto-borrar"><i class="bi bi-trash3-fill"></i></button>            
+                        </div>                          
                     </div>
+
+
+                    
                     <div class="carrito-producto">
-                        <img src="images/tierra 1.jpg" alt="">
+                        <img class="imagen-carrito" src="images/tierra 1.jpg" alt="">
                         <div class="Carrito-producto-nombre">
-                            <small>Titulo</small>
-                            <h3>Tierra de hojas 03</h3>                            
+                            <small>Material</small>
+                            <h3>Tierra de hojas </h3>                            
                         </div>
                         <div class="Carrito-producto-cantidad">
                             <small>Cantidad</small>
@@ -93,28 +96,32 @@
                         <div class="Carrito-producto-precio">
                             <small>precio</small>
                             <p>$3000</p>
-                            <div class="Carrito-producto-subtotal">
-                                <small>Subtotal</small>
-                                <p>$3000</p>     
-                                <button class="carrito-producto-borrar"><i class="bi bi-trash3-fill"></i></button>            
-                            </div>                          
                         </div>
-
-
+                        <div class="Carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$3000</p>     
+                            <button class="carrito-producto-borrar"><i class="bi bi-trash3-fill"></i></button>            
+                        </div>                          
                     </div>
+
+
+                   
                 </div>
-                 <div class="Carrito-acciones">
+                 <div class="Carrito-acciones disabled">
                     <div class="Carrito-izquierda">
-                        <button class="carrito-acciones-Vaciar">Vaciar Carrito </button>
+                        <button class="carrito-acciones-vaciar">Vaciar Carrito </button>
                     </div >
                     <div class="Carrito-derecha">
-                        <div class="carrito-aciones-total">
+                        <div class="carrito-acciones-total">
                             <p>Total</p>
                             <p id="Total">$6000 </p>
                         </div>
                         <button class="Carrito-acciones-comprar">Comprar</button>
                     </div>
-                 </div>            
+                 </div>  
+
+                 <p class="carrito-comprado disabled">Muchas gracias por tu compra  <i class="bi bi-emoji-laughing-fill"></i>.</p>
+            
             </div>
         </main>
     </div>
