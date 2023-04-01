@@ -239,6 +239,7 @@ function actualizarBotonesAgregar(){
     botonesAgregar.forEach(boton =>{
         boton.addEventListener("click", agregarAlCarrito);
 
+       
     });
 
 }    
@@ -260,10 +261,12 @@ function agregarAlCarrito(e){
     }
    actualizarNumerito(); 
 
-   localStorage.setItem("productos-en-carrito",JSON.stringify(productosEnCarrito) )
+   localStorage.setItem("productos-en-Carrito",JSON.stringify(productosEnCarrito));    
 }
 
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0 );
     numerito.innerText = nuevoNumerito;
+
 }
+
