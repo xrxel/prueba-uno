@@ -198,7 +198,7 @@ function cargarProductos(productosElegidos){
     })
 
     actualizarBotonesAgregar();
-    console.log(botonesAgregar);
+    
 
 }
 cargarProductos(productos);
