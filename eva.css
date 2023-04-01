@@ -64,6 +64,7 @@ aside{
     font-weight: 600;
     font-size: .95rem;
     padding: 1rem;
+    width: 100%;
 }
 .boton-menu.active{
     background-color: var(--clr-white);
